@@ -1,70 +1,87 @@
+
 body {
-    margin: 0 auto;
-
-
-}
-
-.container {
-    margin: auto;
-    width: auto;
-    height: 960px;
-
+    margin: 0;
+    background-image: url("achtergrond.jpg");
+    background-size: cover;
 }
 
 header {
     width: 100%;
-    height: 15%;
-    background-color: #75A1A0;
-    display: block;
+    background-color: #20B2AA;
+    opacity: 0.8;
+
 }
 
-.logo {
-    display: inline-block;
-    float: left;
-    padding-left: 10%;
+ul {
+    width: auto;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+
 }
 
-nav ul {
-    float: left;
-    width: 800px;
-    height: 100px;
-    position: absolute;
-    right: 20px;
-    margin-top: 2.5%;
-}
-
-nav ul li {
-    float: left;
-    padding: 0 30px;
+ul li {
     list-style-type: none;
 
 }
 
-nav ul li a {
-    font-size: 20pt;
-    font-weight: bold;
+li a {
     text-decoration: none;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.70);
-    font-style: oblique;
-    font-family: 'Century Schoolbook', Verdana, Geneva, sans-serif;
+    font-size: 20pt;
+    font-family: 'Arial', Verdana, Geneva, sans-serif;
+    color: #ffffff;
+}
+
+li img {
+    position: relative;
+}
+
+.welkom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40rem;
+}
+
+h1 {
+    width: 30%;
+    height: 10%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: #000000;
+    font-family: 'Arial', Verdana, Geneva, sans-serif;
+    font-size: 3vmax;
+
+}
+
+article {
+    margin-left: 28vw;
+    width: 50%;
+    font-size: 2vh;
+    font-family: 'Arial', Verdana, Geneva, sans-serif;
     color: black;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    -webkit-transition: all 1.0s ease-in-out;
-    -moz-transition: all 1.0s ease-in-out;
-    -o-transition: all 1.0s ease-in-out;
-    transition: all 1.0s ease-in-out;
+
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-    color: #fff;
-    background-color: transparent;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-main {
-    width: 100%;
-    height: 40%;
-    background-color: green;
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
 }
